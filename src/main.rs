@@ -21,7 +21,7 @@ fn main() {
 }
 
 fn server() {
-    let server = TcpListener::bind((Ipv4Addr::new(127, 0, 0, 1), PORT)).unwrap();
+    let server = TcpListener::bind((Ipv4Addr::new(0,0,0,0), PORT)).unwrap();
     
     let mut clients: Vec<TcpStream> = vec![];
 
